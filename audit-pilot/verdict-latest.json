@@ -1,6 +1,6 @@
 {
   "ok": true,
-  "generatedAt": "2026-09-03T22:04:36.600Z",
+  "generatedAt": "2026-09-06T05:23:40.219Z",
   "reviewEngineVersion": 1,
   "request": "review this change",
   "verdict": "WARN",
@@ -18,38 +18,34 @@
         "riskFlags": []
       },
       {
-        "path": ".github/ISSUE_TEMPLATE/config.yml",
-        "score": 0,
-        "riskFlags": [
-          "configuration"
-        ]
-      },
-      {
-        "path": ".github/ISSUE_TEMPLATE/pilot_feedback.yml",
+        "path": "CHANGELOG.md",
         "score": 0,
         "riskFlags": []
       },
       {
-        "path": ".github/workflows/otito-ci.yml",
-        "score": 10,
-        "riskFlags": [
-          "configuration"
-        ]
+        "path": "integrations/herdr/action.mjs",
+        "score": 0,
+        "riskFlags": []
       },
       {
-        "path": "CHANGELOG.md",
+        "path": "integrations/herdr/runtime.mjs",
+        "score": 0,
+        "riskFlags": []
+      },
+      {
+        "path": "server.json",
         "score": 0,
         "riskFlags": []
       }
     ],
     "risks": [
-      "Configuration change: verify environment variables, secrets, build output, and production defaults."
+      "No obvious high-risk domain detected. Main risk is missing a caller or test outside the matched files."
     ]
   },
   "prReviewSummary": {
-    "changedFiles": 31,
-    "additions": 514,
-    "deletions": 52,
+    "changedFiles": 15,
+    "additions": 225,
+    "deletions": 17,
     "riskLevel": "low",
     "riskFlags": [
       "configuration"
@@ -64,7 +60,7 @@
       {
         "name": "Changed files",
         "status": "PASS",
-        "summary": "32 changed files found."
+        "summary": "16 changed files found."
       },
       {
         "name": "Secret safety",
@@ -104,6 +100,6 @@
     ]
   },
   "tokenEstimate": {
-    "fullJson": 443
+    "fullJson": 427
   }
 }
